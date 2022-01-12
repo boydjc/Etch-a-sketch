@@ -9,7 +9,11 @@ function createGrid(squareNum) {
 			let gridSquare = document.createElement('div');
 			gridSquare.setAttribute('style', `grid-column: ${a};
 											  grid-row: ${i};
+											  background-color: white;
 											  border: 1px solid black;`);
+			gridSquare.addEventListener('mouseover', (e) => {
+				gridSquare.setAttribute('style', 'background-color: black');	
+			});
 			etchContainer.appendChild(gridSquare);
 		}
 	}
