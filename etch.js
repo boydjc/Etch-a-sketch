@@ -1,3 +1,21 @@
+let toggleDraw = false;
+
+let etchContainer = document.querySelector("#etchContainer");
+etchContainer.addEventListener('click', (e) => {
+
+	let penIndicatorLabel = document.querySelector("#penIndicatorLabel");
+
+	if(toggleDraw) {
+		toggleDraw = false;
+		penIndicatorLabel.innerHTML = "Pen Off";
+		penIndicatorLabel.style.color = "#1D3357";
+	}else {
+		toggleDraw = true;
+		penIndicatorLabel.innerHTML = "Pen On";
+		penIndicatorLabel.style.color = "white";
+	}	
+});
+
 function createGrid(squareNum) {
 	// retrieve grid container
 	let etchContainer = document.querySelector("#gridContainer");
@@ -10,10 +28,11 @@ function createGrid(squareNum) {
 			gridSquare.setAttribute('style', `grid-column: ${a};
 											  grid-row: ${i};
 											  background-color: white;
-											  border: 1px solid black;`);
+											  border: 1px solid #A8DADC;`);
 			gridSquare.addEventListener('mouseover', (e) => {
-				
-				gridSquare.style.backgroundColor = "black";
+				if(toggleDraw) {
+					gridSquare.style.backgroundColor = "black";
+				}
 			});
 			etchContainer.appendChild(gridSquare);
 		}
