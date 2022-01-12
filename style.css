@@ -6,6 +6,10 @@
 	text-align: center;
 }
 
+#controlContainer {
+	padding: 10px;
+}
+
 #etchContainer {
 	display: flex;
 	justify-content: space-around;
@@ -16,5 +20,14 @@
 	width: 400px;
 	height: 400px;
 	display: grid;
+}
+
+#rangeContainer {
+	display: flex;
+	gap: 10px;
+}
+
+.controlLabels {
+	font-size: 22px;
 }
 

@@ -10,7 +10,6 @@ function createGrid(squareNum) {
 			gridSquare.setAttribute('style', `grid-column: ${a};
 											  grid-row: ${i};
 											  background-color: white;
-											  transition: background-color 0.5s;
 											  border: 1px solid black;`);
 			gridSquare.addEventListener('mouseover', (e) => {
 				
