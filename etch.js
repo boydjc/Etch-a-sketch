@@ -27,6 +27,10 @@ let squareRange = document.querySelector("#squareRange");
 
 squareRange.addEventListener('change', (e) => {
 
+	// update the label for the range slider
+	let squareRangeLabel = document.querySelector("#squareRangeLabel");
+	squareRangeLabel.innerHTML = `${squareRange.value} x ${squareRange.value}`; 
+
 	// empty the grid then create a new one with the 
 	// correct number of squares
 	let gridContainer = document.querySelector("#gridContainer");
