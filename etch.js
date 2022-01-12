@@ -1,7 +1,7 @@
 let toggleDraw = false;
 
-let etchContainer = document.querySelector("#etchContainer");
-etchContainer.addEventListener('click', (e) => {
+let gridContainer = document.querySelector("#gridContainer");
+gridContainer.addEventListener('click', (e) => {
 
 	let penIndicatorLabel = document.querySelector("#penIndicatorLabel");
 
@@ -57,6 +57,13 @@ squareRange.addEventListener('change', (e) => {
 		gridContainer.removeChild(gridContainer.firstChild);
 	}
 
+	createGrid(squareRange.value);
+});
+
+// event listener for clear button
+
+let clearButton = document.querySelector("#clearButton"); 
+clearButton.addEventListener('click', (e) => {
 	createGrid(squareRange.value);
 });
 
