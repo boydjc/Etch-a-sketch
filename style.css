@@ -1,3 +1,18 @@
+/*
+*	Color Palette
+*	#E63946 - Imperial Red
+*	#F1FAEE - Honeydew
+*	#A8DADC - Powder Blue
+*	#457B9D - Celadon Blue
+*	#1D3357 - Prussian Blue
+*/
+
+body {
+	background-color: #457B9D;
+	color: #F1FAEE;
+}
+
+
 #header, #etchContainer, #footer {
 	border: 2px solid black;
 }
@@ -8,6 +23,22 @@
 
 #controlContainer {
 	padding: 10px;
+	display: flex;
+	justify-content: space-around;
+	gap: 10px;
+	flex-flow: row wrap;
+}
+
+#penIndicatorContainer {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+}
+
+#penIndicatorLabel {
+	padding-top: 5px;
+	color: #1D3357;
 }
 
 #etchContainer {
@@ -20,12 +51,18 @@
 	width: 400px;
 	height: 400px;
 	display: grid;
+	box-shadow: 0px 0px 20px #1D3357; 
 }
 
 #rangeContainer {
 	display: flex;
 	gap: 10px;
 }
+
+#squareRangeLabel {
+	padding-top: 17px;
+}
+
 
 .controlLabels {
 	font-size: 22px;
