@@ -9,11 +9,28 @@ function createGrid(squareNum) {
 			let gridSquare = document.createElement('div');
 			gridSquare.setAttribute('style', `grid-column: ${a};
 											  grid-row: ${i};
-											  background-color: red;
 											  border: 1px solid black;`);
 			etchContainer.appendChild(gridSquare);
 		}
 	}
 }
 
-createGrid(50);
+// get the range slider and use it to control the number of squares we have
+// in the grid
+
+let squareRange = document.querySelector("#squareRange");
+
+squareRange.addEventListener('change', (e) => {
+
+	// empty the grid then create a new one with the 
+	// correct number of squares
+	let gridContainer = document.querySelector("#gridContainer");
+	while(gridContainer.firstChild) {
+		gridContainer.removeChild(gridContainer.firstChild);
+	}
+
+	createGrid(squareRange.value);
+});
+
+
+createGrid(25);
