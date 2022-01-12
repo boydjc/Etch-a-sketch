@@ -31,7 +31,18 @@ function createGrid(squareNum) {
 											  border: 1px solid #A8DADC;`);
 			gridSquare.addEventListener('mouseover', (e) => {
 				if(toggleDraw) {
-					gridSquare.style.backgroundColor = "black";
+					let blackColorToggle = document.querySelector("#blackColorToggle");
+					let randomColorToggle = document.querySelector("#randomColorToggle");
+
+					if(blackColorToggle.checked) {
+						gridSquare.style.backgroundColor = "black";
+					}else if(randomColorToggle.checked) {
+						// get random color
+						let red = Math.floor(Math.random() * 256);
+						let green = Math.floor(Math.random() * 256);
+						let blue = Math.floor(Math.random() * 256);
+						gridSquare.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+					}
 				}
 			});
 			etchContainer.appendChild(gridSquare);
@@ -59,6 +70,12 @@ squareRange.addEventListener('change', (e) => {
 
 	createGrid(squareRange.value);
 });
+
+
+// make sure black color selected by default
+let blackToggle = document.querySelector("#blackColorToggle");
+blackToggle.checked = true;
+
 
 // event listener for clear button
 
