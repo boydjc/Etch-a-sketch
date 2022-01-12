@@ -41,6 +41,14 @@ body {
 	color: #1D3357;
 }
 
+#clearButtonContainer {
+	padding-top: 18px;
+}
+
+#clearButton {
+	font-size: 18px;
+}
+
 #etchContainer {
 	display: flex;
 	justify-content: space-around;
