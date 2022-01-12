@@ -41,6 +41,17 @@ body {
 	color: #1D3357;
 }
 
+#colorToggleContainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	gap: 10px;
+}
+
+#blackColorToggleLabel, #randomColorToggleLabel {
+	padding-top: 20px;
+}
+
 #clearButtonContainer {
 	padding-top: 18px;
 }
