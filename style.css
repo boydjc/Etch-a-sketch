@@ -48,7 +48,7 @@ body {
 	gap: 10px;
 }
 
-#blackColorToggleLabel, #randomColorToggleLabel {
+#blackColorToggleLabel, #randomColorToggleLabel, #shadeColorToggleLabel {
 	padding-top: 20px;
 }
 
