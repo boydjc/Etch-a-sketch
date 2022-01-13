@@ -48,8 +48,15 @@ body {
 	gap: 10px;
 }
 
-#blackColorToggleLabel, #randomColorToggleLabel, #shadeColorToggleLabel {
+.toggleLabels {
 	padding-top: 20px;
+}
+
+#gridToggleContainer {
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+	gap: 10px;
 }
 
 #clearButtonContainer {

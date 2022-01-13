@@ -18,17 +18,27 @@
 			</div>
 			<div id="penIndicatorContainer">
 				<div id="penIndicator">
-					<img src="assets/images/pen.png">
+					<img src="assets/images/penOff.png">
 				</div>
 				<label for="penIndicator" class="controlLabels" id="penIndicatorLabel">Pen off</label>
 			</div>
 			<div id="colorToggleContainer">
+				<label id="colorLabel" class="controlLabels toggleLabels">Color: </label>
 				<input type="radio" name="colorToggle" id="blackColorToggle">
-				<label for="blackColorToggle" id="blackColorToggleLabel" class="controlLabels">Black Color</label>
+				<label for="blackColorToggle" id="blackColorToggleLabel" class="controlLabels toggleLabels">Black</label>
 				<input type="radio" name="colorToggle" id="randomColorToggle">
-				<label for="randomColorToggle" id="randomColorToggleLabel" class="controlLabels">Random Color</label>
+				<label for="randomColorToggle" id="randomColorToggleLabel" class="controlLabels toggleLabels">Random</label>
 				<input type="radio" name="colorToggle" id="shadeColorToggle">
-				<label for="shadeColorToggle" id="shadeColorToggleLabel" class="controlLabels">Shade Color</label>
+				<label for="shadeColorToggle" id="shadeColorToggleLabel" class="controlLabels toggleLabels">Shade</label>
+				<input type="radio" name="colorToggle" id="eraseColorToggle">
+				<label for="eraseColorToggle" id="eraseColorToggleLabel" class="controlLabels toggleLabels">Erase</label>
+			</div>
+			<div id="gridToggleContainer">
+				<label id="gridLabel" class="controlLabels toggleLabels">Grid: </label>
+				<input type="radio" name="gridToggle" id="gridOnToggle">
+				<label for="gridOnToggle" name="gridOnToggleLabel" class="controlLabels toggleLabels">On</label>
+				<input type="radio" name="gridToggle" id="gridOffToggle">
+				<label for="gridOffToggle" name="gridOffToggleLabel" class="controlLabels toggleLabels">Off</label>
 			</div>
 			<div id="clearButtonContainer">
 				<button type="button" id="clearButton">Clear Board</button>
