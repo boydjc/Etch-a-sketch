@@ -103,6 +103,8 @@ squareRange.addEventListener('change', (e) => {
 		gridContainer.removeChild(gridContainer.firstChild);
 	}
 
+	gridOnToggle.checked = true;
+	gridOffToggle.checked = false;
 	createGrid(squareRange.value);
 });
 
